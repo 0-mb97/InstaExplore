@@ -22,22 +22,22 @@ This Python project, conceived during SwordsWar, is a dedicated tool for contrib
 Responsible for managing client-side configuration.
      - Control proxies, user-agents, and IP tracking during the Instagram account creation process. Integrates OpenVPN configurations, handles user-agents, and ensures dynamic proxy switching for a realistic signup simulation.
 
-   - **[PreLogin](./user_guide/pre_login.txt):** Handles pre-login actions.
+   - **[PreLogin](./user_guide/pre_login.md):** Handles pre-login actions.
       - Manages actions required before the actual login process, including obtaining initial session information such as js_ig_did, js_datr, csrftoken, and x_instagram_ajax.
 
-   - **[Cookies](./user_guide/cookies.txt):** Manages cookies for the Instagram session.
+   - **[Cookies](./user_guide/cookies.md):** Manages cookies for the Instagram session.
       - Crucial for maintaining session state, this class handles the management of cookies, ensuring necessary session data is retained throughout the signup process, including initial session information such as mid and ig_nrcb.
 
-   - **[WebCreateAjaxAttempt](./user_guide/WebCreateAjaxAttempt.txt):** Manages attempts to create a new Instagram account via web AJAX.
+   - **[WebCreateAjaxAttempt](./user_guide/WebCreateAjaxAttempt.md):** Manages attempts to create a new Instagram account via web AJAX.
       - Handles the creation of an Instagram account through asynchronous requests, managing data such as the username, first_name, password, enc_password, email, opt_into_one_tap, automatically set by the program.
 
-   - **[SendVerifyEmail](./user_guide/SendVerifyEmail.txt):** Sends verification emails.
+   - **[SendVerifyEmail](./user_guide/SendVerifyEmail.md):** Sends verification emails.
       - Manages the step of sending verification emails, handling data such as email_to_verify, device_id, and retrieving the code from fake-mail.com automatically.
 
-   - **[ConfirmEmailCode](./user_guide/ConfirmEmailCode.txt):** Handles confirmation of the verification code.
+   - **[ConfirmEmailCode](./user_guide/ConfirmEmailCode.md):** Handles confirmation of the verification code.
       - Manages the process of confirming the verification code received via email. Handles user input, validation, and interaction with the verification code, sending the code along with previous parameters.
 
-   - **[CreateAccountAjax](./user_guide/CreateAccountAjax.txt):** Creates a new Instagram account through the web AJAX process.
+   - **[CreateAccountAjax](./user_guide/CreateAccountAjax.md):** Creates a new Instagram account through the web AJAX process.
       - Contains parameters from previous steps and adds the signup_code. It manages data such as username, password, email, and other parameters.
 
 3. **Usage:**
